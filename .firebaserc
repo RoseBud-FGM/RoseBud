@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fgm-project-a995a": {
+      "hosting": {
+        "UnCut": [
+          "rose-bud"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fgm-project-a995a"
+  }
+}
