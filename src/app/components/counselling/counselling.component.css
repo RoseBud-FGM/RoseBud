@@ -133,4 +133,52 @@ body {
     text-decoration: none;
 }
  
+h1 {
+    font-size: clamp(20px, 4vw, 30px);
+    line-height: 1.2;
+    margin-bottom: 40px;
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+  }
+  main {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fafafa;
+    background-image: linear-gradient(to right, #CC95C0 0%, #DBD4B4  51%, #CC95C0  100%);
+    color: #000000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  p { text-align: left; }
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
 /*************************************************************************************************/
