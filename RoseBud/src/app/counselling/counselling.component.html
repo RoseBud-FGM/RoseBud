@@ -1,1 +1,91 @@
-<p>counselling works!</p>
+<section>
+    <ul class="cards">
+        <li *ngFor="let counsellor of counsellors" >
+          <div href="" class="card">
+            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                <img class="card__thumb" src="{{counsellor.img_src}}" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">{{counsellor.name}}</h3>
+                  <span class="card__tagline">{{counsellor.location}}</span>            
+                  <span class="card__status">Phone: {{counsellor.phone_no}}</span>
+                  <br><span class="card__status">E-mail: {{counsellor.email}}</span>
+                  <br><span class="card__status">Rating: {{counsellor.rating}}</span>
+                </div>
+              </div>
+              <p class="card__description">{{counsellor.desc}}</p>
+              <button class="btn" onclick="alert('Session Booked')">Book Session</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+</section>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/slick-slider.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+  //according to loftblog tut
+  $(".nav li:first").addClass("active");
+
+  var showSection = function showSection(section, isAnimate) {
+    var direction = section.replace(/#/, ""),
+      reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+      reqSectionPos = reqSection.offset().top - 0;
+
+    if (isAnimate) {
+      $("body, html").animate(
+        {
+          scrollTop: reqSectionPos,
+        },
+        800
+      );
+    } else {
+      $("body, html").scrollTop(reqSectionPos);
+    }
+  };
+
+  var checkSection = function checkSection() {
+    $(".section").each(function () {
+      var $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var currentId = $this.data("section"),
+          reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+        reqLink
+          .closest("li")
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      }
+    });
+  };
+
+  $(".main-menu, .responsive-menu, .scroll-to-section").on(
+    "click",
+    "a",
+    function (e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    }
+  );
+
+  $(window).scroll(function () {
+    checkSection();
+  });
+</script>
+
+
