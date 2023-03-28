@@ -36,7 +36,7 @@ export class CounsellingComponent{
         name: "Dr.Andrew Meltzoff",
         location: "Lagos, NIG",
         phone_no: "+234 702 872 0227",
-        email: "andrewzoff@gmail.com",
+        email: "drewzoff@gmail.com",
         rating: "★★★★☆",
         desc: "Dr. Andrew has two years of experience in counselling people affected by FGM"
       }
