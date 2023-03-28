@@ -34,10 +34,64 @@ font & reset css
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
-s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-figure, header, nav, section, article, aside, footer, figcaption {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -65,13 +119,20 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-header, nav, section, article, aside, footer, hgroup {
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
   display: block;
 }
 
@@ -79,8 +140,9 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Open Sans', sans-serif;
+html,
+body {
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -93,7 +155,12 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -121,7 +188,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ::selection {
@@ -135,7 +202,8 @@ body {
 }
 
 @media (max-width: 991px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
   .mobile-top-fix {
@@ -153,19 +221,27 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .main-button-gradient a:hover {
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   opacity: 0.9;
 }
 
@@ -178,7 +254,7 @@ body {
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .white-button a:hover {
@@ -190,7 +266,7 @@ body {
   font-weight: 500;
   color: #dc8cdb;
   text-decoration: underline !important;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .text-button a:hover {
@@ -239,21 +315,24 @@ section {
   margin-top: 30px;
 }
 
-
 /* 
 ---------------------------------------------
 header
 --------------------------------------------- 
 */
 .background-header {
-  background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
-  height: 80px!important;
-  position: fixed!important;
-  top: 0!important;
+  background: rgb(219, 138, 222) !important;
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  ) !important;
+  height: 80px !important;
+  position: fixed !important;
+  top: 0 !important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
 .header-area {
@@ -267,10 +346,10 @@ header
   left: 0;
   right: 0;
   z-index: 100;
-  -webkit-transition: all .5s ease 0s;
-  -moz-transition: all .5s ease 0s;
-  -o-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .header-area .main-nav {
@@ -340,13 +419,13 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #fff !important;
   opacity: 0.75;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #fff !important;
   opacity: 1;
 }
 
@@ -373,7 +452,7 @@ header
   top: 40px;
   border-radius: 5px;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   transform: translateY(+2em);
   visibility: hidden;
   z-index: -1;
@@ -389,7 +468,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #2a2a2a !important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -405,7 +484,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #dc8cdb!important;
+  color: #dc8cdb !important;
   padding-left: 25px;
 }
 
@@ -564,7 +643,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #dc8cdb!important;
+    color: #dc8cdb !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -622,7 +701,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #dc8cdb!important;
+    color: #dc8cdb !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -647,12 +726,13 @@ header
     height: auto;
   }
   .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
+    color: #3b566e;
     right: 30px;
     font-size: 14px;
     top: 15px;
   }
-  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
+  .header-area .main-nav .nav li.submenu:hover ul,
+  .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
 }
@@ -662,7 +742,6 @@ header
     display: flex !important;
   }
 }
-
 
 /* 
 ---------------------------------------------
@@ -694,7 +773,7 @@ section.main-banner {
   background-image: url(../images/banner-right-dec.png);
   width: 378px;
   height: 378px;
-  content: '';
+  content: "";
   right: -25%;
   z-index: 1;
 }
@@ -704,7 +783,7 @@ section.main-banner {
   background-image: url(../images/banner-left-dec.png);
   width: 214px;
   height: 429px;
-  content: '';
+  content: "";
   left: 0;
   bottom: -240px;
   z-index: 1;
@@ -716,7 +795,7 @@ section.main-banner {
   font-size: 17px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #777777;;
+  color: #777777;
 }
 
 .main-banner .header-text h2 {
@@ -740,19 +819,18 @@ section.main-banner {
   z-index: 2;
 }
 
-
 /*
 ---------------------------------------------
 services
 ---------------------------------------------
-*/ 
+*/
 
 .services .item {
   border-radius: 15px;
   text-align: center;
   padding: 50px 30px;
   margin: 15px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .services .item:hover {
@@ -791,7 +869,6 @@ services
   background-color: #dc8cdb;
 }
 
-
 /*
 ---------------------------------------------
 our courses
@@ -808,7 +885,7 @@ section.our-courses .section-heading p {
 
 section.our-courses:before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
@@ -819,7 +896,7 @@ section.our-courses:before {
 
 section.our-courses:after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
@@ -844,12 +921,12 @@ section.our-courses .naccs .menu div {
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(219, 138, 222, 0.5);
 }
 
 section.our-courses .naccs .menu div.active {
   color: #dc8cdb;
-  border: 3px solid rgba(219,138,222,1);
+  border: 3px solid rgba(219, 138, 222, 1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -890,8 +967,12 @@ section.our-courses ul.nacc li .left-image img {
 
 section.our-courses ul.nacc li .left-image .price h6 {
   position: absolute;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   color: #fff;
   top: 20px;
   left: 20px;
@@ -956,7 +1037,6 @@ section.our-courses ul.nacc li p {
   margin: 0;
 }
 
-
 /*
 ---------------------------------------------
 cta
@@ -995,7 +1075,6 @@ section.simple-cta p {
   margin-bottom: 40px;
 }
 
-
 /* 
 ---------------------------------------------
 testimonials
@@ -1008,7 +1087,7 @@ section.testimonials {
 
 section.testimonials:before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/testimonials-left-dec.png);
   left: 0px;
   top: -140px;
@@ -1019,7 +1098,7 @@ section.testimonials:before {
 
 section.testimonials:after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/testimonials-right-dec.png);
   right: 0px;
   bottom: -140px;
@@ -1033,7 +1112,7 @@ section.testimonials:after {
   padding: 30px;
   background-color: #fff;
   margin: 15px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   z-index: 2;
 }
@@ -1065,7 +1144,7 @@ section.testimonials:after {
   z-index: 2;
   position: absolute;
   right: 30px;
-  bottom: 30px
+  bottom: 30px;
 }
 
 .testimonials .owl-dots {
@@ -1084,8 +1163,6 @@ section.testimonials:after {
 .testimonials .owl-dots .active {
   background-color: #dc8cdb;
 }
-
-
 
 /* 
 ---------------------------------------------
@@ -1109,7 +1186,7 @@ section.report {
 
 section.contact-us:after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/footer-left-dec.png);
   left: 0px;
   top: 60px;
@@ -1120,7 +1197,7 @@ section.contact-us:after {
 
 section.report:after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0px;
   top: 60px;
   width: 267px;
@@ -1157,8 +1234,12 @@ section.contact-us .contact-info .icon i {
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   color: #fff;
 }
 
@@ -1171,8 +1252,12 @@ section.report .contact-info .icon i {
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   color: #fff;
 }
 
@@ -1199,7 +1284,6 @@ section.report .contact-info span {
   color: #dc8cdb;
   font-weight: 700;
 }
-
 
 section.contact-us .section-heading {
   text-align: left;
@@ -1299,15 +1383,19 @@ section.contact-us #contact button {
   float: right;
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
+  transition: all 0.3s;
   border: none;
   outline: none;
 }
@@ -1316,15 +1404,19 @@ section.report #contact button {
   float: right;
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
+  transition: all 0.3s;
   border: none;
   outline: none;
 }
@@ -1366,7 +1458,7 @@ section.contact-us ul.social-icons li a {
   background-color: #fff;
   color: #dc8cdb;
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 section.report ul.social-icons li a {
@@ -1378,7 +1470,7 @@ section.report ul.social-icons li a {
   background-color: #fff;
   color: #dc8cdb;
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 section.contact-us ul.social-icons li a:hover {
@@ -1430,7 +1522,6 @@ section.page-heading .header-text h1 {
   color: #111;
   margin-top: 10px;
 }
-
 
 /*
 ---------------------------------------------
@@ -1489,7 +1580,7 @@ section.our-team .section-heading p {
 
 section.our-team:before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
@@ -1500,7 +1591,7 @@ section.our-team:before {
 
 section.our-team:after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
@@ -1616,7 +1707,7 @@ section.our-team ul.nacc li .left-content span a {
   padding-right: 30px;
   color: #111;
   border-right: 2px solid #111;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 section.our-team ul.nacc li .left-content span a:hover {
@@ -1704,15 +1795,17 @@ section.our-office #video .thumb .play-button a {
   transform: translate(-40px, -40px);
   color: #fff;
   font-size: 22px;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(
+    -145deg,
+    rgba(219, 138, 222, 1) 0%,
+    rgba(246, 191, 159, 1) 100%
+  );
 }
 
 section.our-office #video img {
   border-radius: 20px;
 }
-
-
 
 /*
 ---------------------------------------------
@@ -1726,7 +1819,7 @@ section.featured-product {
 
 section.featured-product:before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/testimonials-left-dec.png);
   left: 0px;
   top: -140px;
@@ -1737,7 +1830,7 @@ section.featured-product:before {
 
 section.featured-product:after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../images/testimonials-right-dec.png);
   right: 0px;
   bottom: -140px;
@@ -1799,7 +1892,6 @@ section.featured-product .info-item h4 {
 section.featured-product .product-image {
   margin: 0px 60px;
 }
-
 
 /*
 ---------------------------------------------
@@ -1866,29 +1958,27 @@ section.more-info .count-area-content .count-title {
   z-index: 1;
 }
 
-
 /* 
 ---------------------------------------------
 responsive
 --------------------------------------------- 
 */
 
-
 body {
   overflow-x: hidden;
 }
 
 @media (max-width: 1330px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     right: -30px;
   }
-  .services .owl-nav .owl-prev{
+  .services .owl-nav .owl-prev {
     left: -25px;
   }
-  .our-courses .owl-nav .owl-next{
+  .our-courses .owl-nav .owl-next {
     right: -30px;
   }
-  .our-courses .owl-nav .owl-prev{
+  .our-courses .owl-nav .owl-prev {
     left: -25px;
   }
 }
@@ -1901,55 +1991,58 @@ body {
     font-size: 62px;
   }
   .header-area {
-    background: rgb(219,138,222) !important;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+    background: rgb(219, 138, 222) !important;
+    background: linear-gradient(
+      -145deg,
+      rgba(219, 138, 222, 1) 0%,
+      rgba(246, 191, 159, 1) 100%
+    ) !important;
   }
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     right: -70px;
   }
-  .services .owl-nav .owl-prev{
+  .services .owl-nav .owl-prev {
     left: -65px;
   }
-  .our-courses .owl-nav .owl-next{
+  .our-courses .owl-nav .owl-next {
     right: -70px;
   }
-  .our-courses .owl-nav .owl-prev{
+  .our-courses .owl-nav .owl-prev {
     left: -65px;
   }
 }
 
 @media (max-width: 1085px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     right: -30px;
   }
-  .services .owl-nav .owl-prev{
+  .services .owl-nav .owl-prev {
     left: -25px;
   }
-  .our-courses .owl-nav .owl-next{
+  .our-courses .owl-nav .owl-next {
     right: -30px;
   }
-  .our-courses .owl-nav .owl-prev{
+  .our-courses .owl-nav .owl-prev {
     left: -25px;
   }
 }
 
 @media (max-width: 1005px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     display: none;
   }
-  .services .owl-nav .owl-prev{
+  .services .owl-nav .owl-prev {
     display: none;
   }
-  .our-courses .owl-nav .owl-next{
+  .our-courses .owl-nav .owl-next {
     display: none;
   }
-  .our-courses .owl-nav .owl-prev{
+  .our-courses .owl-nav .owl-prev {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
-
   .main-banner .header-text {
     text-align: center;
     margin-bottom: 60px;
@@ -2003,7 +2096,7 @@ body {
     transform: translateX(-40px);
   }
   section.featured-product .product-image {
-    margin: 60px
+    margin: 60px;
   }
   section.our-team ul.nacc li .left-content span a,
   section.our-courses ul.nacc li .right-content span {
