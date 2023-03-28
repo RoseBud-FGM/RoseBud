@@ -1,1 +1,177 @@
-<p>report works!</p>
+<section class="page-heading">
+  <div class="container">
+    <div class="header-text">
+      <h4>Get assistance</h4>
+      <h1>Report an incident</h1>
+    </div>
+  </div>
+</section>
+<section class="report" id="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 offset-lg-1">
+        <div class="left-image">
+          <img src="assets/images/cta-left-image.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h6>Report</h6>
+                <h4>Share <em>details</em></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci natus dolores deserunt qui laboriosam atque alias
+                  velit sed libero possimus.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input
+                  type="name"
+                  name="name"
+                  id="name"
+                  placeholder="Victim Name"
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  pattern="[^ @]*@[^ @]*"
+                  placeholder="Email"
+                  required=""
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <textarea
+                  name="details"
+                  id="details"
+                  placeholder="Details"
+                ></textarea>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-office">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="left-info">
+          <div class="section-heading">
+            <h6>Our Office</h6>
+            <h4>Get closer to <em>EduWell</em></h4>
+          </div>
+          <p>
+            Trust fund nocore broklyn humblebrag mustache pork kitsch, bicycle
+            rights hexagon schlitz keytar palo is santo drinking vinegar fam
+            ramps. <br /><br />Four dollar toast and edison bulb vinyl, listicle
+            hashtag pug scenester typewrit er yuccie street artboard or whatever
+            to fill place.
+          </p>
+          <ul>
+            <li>- Selfies you probably haven't heard of them.</li>
+            <li>- Tousled cold-pressed chicharrones yuccie.</li>
+            <li>- Pabst iPhone chartreuse shabby chic tumeric.</li>
+            <li>- Scenester normcore mumblecore snackwave.</li>
+          </ul>
+          <div class="main-button-gradient">
+            <a href="our-services.html">Our Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div id="video">
+          <div class="thumb">
+            <img src="assets/images/video-thumb.jpg" alt="" />
+            <div class="play-button">
+              <a href="http://youtube.com" target="_blank"
+                ><i class="fa fa-play"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/slick-slider.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+  //according to loftblog tut
+  $(".nav li:first").addClass("active");
+
+  var showSection = function showSection(section, isAnimate) {
+    var direction = section.replace(/#/, ""),
+      reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+      reqSectionPos = reqSection.offset().top - 0;
+
+    if (isAnimate) {
+      $("body, html").animate(
+        {
+          scrollTop: reqSectionPos,
+        },
+        800
+      );
+    } else {
+      $("body, html").scrollTop(reqSectionPos);
+    }
+  };
+
+  var checkSection = function checkSection() {
+    $(".section").each(function () {
+      var $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var currentId = $this.data("section"),
+          reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+        reqLink
+          .closest("li")
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+      }
+    });
+  };
+
+  $(".main-menu, .responsive-menu, .scroll-to-section").on(
+    "click",
+    "a",
+    function (e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    }
+  );
+
+  $(window).scroll(function () {
+    checkSection();
+  });
+</script>

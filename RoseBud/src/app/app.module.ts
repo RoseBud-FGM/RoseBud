@@ -7,6 +7,8 @@ import { LandingComponent } from './landing/landing.component';
 import { ReportComponent } from './report/report.component';
 import { CounsellingComponent } from './counselling/counselling.component';
 import { TrackingComponent } from './tracking/tracking.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TrackingComponent } from './tracking/tracking.component';
     LandingComponent,
     ReportComponent,
     CounsellingComponent,
-    TrackingComponent
+    TrackingComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
