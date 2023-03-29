@@ -5,7 +5,7 @@ import { ReportComponent } from './report/report.component'
 import { HeaderComponent } from './header/header.component';
 import { CounsellingComponent } from './counselling/counselling.component';
 
-const routes: Routes = [{path:'', component:CounsellingComponent}];
+const routes: Routes = [{path:'', component:LandingComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
