@@ -1,8 +1,8 @@
 <section class="page-heading">
   <div class="container">
     <div class="header-text">
-      <h4>Review Reports</h4>
-      <h1>Submitted Reports</h1>
+      <h4>Get Assistance</h4>
+      <h1>Available Counsellors</h1>
     </div>
   </div>
 </section>
@@ -10,7 +10,7 @@
   <ul class="cards">
     <li *ngFor="let report of reports">
       <div href="" class="card">
-        <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+        <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
         <div class="card__overlay">
           <div class="card__header">
             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -19,16 +19,18 @@
             <img
               class="card__thumb"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6h3O-7VlFrE8Om3Wl072rKhG4IJfY792YNyOoAT2wYpXoVRhHnJbIwpP9p80zIZGznHY&usqp=CAU"
-              alt=""
+              alt="#"
             />
             <div class="card__header-text">
               <h3 class="card__title">{{ report.name }}</h3>
               <span class="card__tagline">{{ report.location }}</span>
-              <!-- <span class="card__status">{{ report.timestamp }}</span> -->
+              <span class="card__status">Phone: {{ report.phone }}</span>
+              <br /><span class="card__status">E-mail: {{ report.email }}</span>
+              <br />
             </div>
           </div>
           <p class="card__description">{{ report.desc }}</p>
-          <button class="btn">Review</button>
+          <button class="btn" onclick="alert('Report accepted')">Accept</button>
         </div>
       </div>
     </li>

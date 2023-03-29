@@ -1,7 +1,6 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Report } from '../items/report'
-import { environment  } from "../../environments/environment";
+import { environment  } from '../../environments/environment';
 
 import { initializeApp  } from "firebase/app";
 import { getFirestore, collection, getDocs} from "firebase/firestore";
@@ -11,7 +10,7 @@ import { getFirestore, collection, getDocs} from "firebase/firestore";
   templateUrl: './review.component.html',
   styleUrls: ['./review.component.css']
 })
-export class ReviewComponent {
+export class ReviewComponent implements OnInit {
   app = initializeApp(environment.firebase);
   db = getFirestore(this.app);
 
@@ -20,9 +19,7 @@ export class ReviewComponent {
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
       snapshot.docs.forEach((doc) => {
-        let ts = new Date(doc.data()['timestamp'].seconds).toString()
-        console.log("Hagu")
-        console.log(doc.data())
+        // let ts = new Date(doc.data()['timestamp'].seconds).toString()
         this.reports.push(
           {
             id: doc.id,
@@ -32,7 +29,6 @@ export class ReviewComponent {
             email: doc.data()['email'],
             desc: doc.data()['desc'],
             age: doc.data()['age'],
-            timestamp: ts
           }
         )
       })

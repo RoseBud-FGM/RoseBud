@@ -1,10 +1,9 @@
 export class Report {
     id!: string
-    age!: number
+    age!: string
     desc!: string  
     location!: string
     name!: string
-    timestamp!: string
     phone!: string
     email!: string
 }

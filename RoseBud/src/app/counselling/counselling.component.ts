@@ -33,6 +33,7 @@ export class CounsellingComponent implements OnInit {
           }
         )
       })
+      console.log("Hagu");
     })
   }
   ngOnInit(): void {}
