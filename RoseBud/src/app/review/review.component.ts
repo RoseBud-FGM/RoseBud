@@ -1,35 +1,38 @@
+
 import { Component, OnInit } from '@angular/core';
-import { Counsellor } from '../items/counsellor';
+import { Report } from '../items/report'
 import { environment  } from "../../environments/environment";
 
 import { initializeApp  } from "firebase/app";
 import { getFirestore, collection, getDocs} from "firebase/firestore";
 
 @Component({
-  selector: 'app-counselling',
-  templateUrl: './counselling.component.html',
-  styleUrls: ['./counselling.component.css']
+  selector: 'app-review',
+  templateUrl: './review.component.html',
+  styleUrls: ['./review.component.css']
 })
-
-export class CounsellingComponent implements OnInit {
+export class ReviewComponent {
   app = initializeApp(environment.firebase);
   db = getFirestore(this.app);
 
-  colRef = collection(this.db, "counsellor");
-  counsellors: Counsellor[] = [];
+  colRef = collection(this.db, "report");
+  reports: Report[] = [];
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
       snapshot.docs.forEach((doc) => {
-        this.counsellors.push(
+        let ts = new Date(doc.data()['timestamp'].seconds).toString()
+        console.log("Hagu")
+        console.log(doc.data())
+        this.reports.push(
           {
             id: doc.id,
-            avatar: doc.data()['avatar'],
             name: doc.data()['name'],
             location: doc.data()['location'],
             phone: doc.data()['phone'],
             email: doc.data()['email'],
-            rating: doc.data()['rating'],
-            desc: doc.data()['desc']
+            desc: doc.data()['desc'],
+            age: doc.data()['age'],
+            timestamp: ts
           }
         )
       })
