@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fgm-project-a995a": {
+      "hosting": {
+        "RoseBud": [
+          "rose-bud"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fgm-project-a995a"
+  }
+}

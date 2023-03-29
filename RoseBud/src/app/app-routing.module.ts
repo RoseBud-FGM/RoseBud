@@ -4,8 +4,9 @@ import { LandingComponent } from './landing/landing.component';
 import { ReportComponent } from './report/report.component'
 import { HeaderComponent } from './header/header.component';
 import { CounsellingComponent } from './counselling/counselling.component';
+import { ReviewComponent } from './review/review.component';
 
-const routes: Routes = [{path:'', component:CounsellingComponent}];
+const routes: Routes = [{path:'', component:ReviewComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
