@@ -50,13 +50,19 @@
               />
             </div>
             <div class="col-lg-4">
-              <input type="number" name="age" id="age" placeholder="Age" />
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Age"
+                ngModel
+              />
             </div>
             <div class="col-lg-8">
               <input
                 pattern="+[0-9]"
-                formControlName="number"
-                id="number"
+                formControlName="phone"
+                id="phone"
                 placeholder="Phone Number"
                 nModel
               />
@@ -70,8 +76,8 @@
             </div>
             <div class="col-lg-12">
               <textarea
-                formControlName="details"
-                id="details"
+                formControlName="desc"
+                id="desc"
                 placeholder="Details"
                 required
                 ngModel

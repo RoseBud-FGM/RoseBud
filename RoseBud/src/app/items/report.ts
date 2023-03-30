@@ -6,4 +6,7 @@ export class Report {
     name!: string
     phone!: string
     email!: string
+    date!: string
+    status!: string
+    org!: string
 }

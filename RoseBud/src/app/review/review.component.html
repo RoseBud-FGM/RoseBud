@@ -22,11 +22,15 @@
               alt="#"
             />
             <div class="card__header-text">
-              <h3 class="card__title">{{ report.name }}</h3>
+              <h3 class="card__title">{{ report.name }}, {{ report.age }}F</h3>
               <span class="card__tagline">{{ report.location }}</span>
               <span class="card__status">Phone: {{ report.phone }}</span>
-              <br /><span class="card__status">E-mail: {{ report.email }}</span>
               <br />
+              <span class="card__status">Submitted on: {{ report.date }}</span>
+              <br /><span class="card__status">E-mail: {{ report.email }}</span>
+              <br /><span class="card__status"
+                >Accepting Organization: {{ report.org }}</span
+              >
             </div>
           </div>
           <p class="card__description">{{ report.desc }}</p>

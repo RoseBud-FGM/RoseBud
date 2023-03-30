@@ -7,7 +7,7 @@ import { CounsellingComponent } from './counselling/counselling.component';
 import { ReviewComponent } from './review/review.component';
 import { TrackingComponent } from './tracking/tracking.component';
 
-const routes: Routes = [{path:'', component:ReportComponent}];
+const routes: Routes = [{path:'', component:ReviewComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

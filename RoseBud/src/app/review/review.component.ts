@@ -29,6 +29,9 @@ export class ReviewComponent implements OnInit {
             email: doc.data()['email'],
             desc: doc.data()['desc'],
             age: doc.data()['age'],
+            status: doc.data()['status'],
+            date: doc.data()['date'],
+            org: doc.data()['org'],
           }
         )
       })

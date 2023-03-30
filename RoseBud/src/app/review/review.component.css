@@ -85,6 +85,7 @@ body {
   
 .card__title {
     font-size: 1em;
+    font-weight: bold;
     margin: 0 0 .3em;
     color: #000000;
 }
@@ -99,7 +100,8 @@ body {
   
 .card__status {
     font-size: .8em;
-    color: #000000;
+    color: #575757;
+    left: 0px;
 }
   
 .card__description {

@@ -23,13 +23,16 @@ export class ReportComponent {
       age: new FormControl(),
       phone: new FormControl(),
       location: new FormControl(),
-      details: new FormControl()
+      desc: new FormControl()
     });
   }
   async submitReport() {
-
+    this.myForm.value.status = "Pending";
+    this.myForm.value.org = null;
+    this.myForm.value.date = new Date();
     const docRef = await addDoc(collection(this.db, "report"), this.myForm.value);
     console.log("Document written with ID: ", docRef.id);
     console.log(this.myForm.value);
+    alert("Report Submitted!");
   }
 }
