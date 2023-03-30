@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <form id="contact" action="" method="post">
+        <form id="contact" (ngSubmit)="submitReport()">
           <div class="row">
             <div class="col-lg-12">
               <div class="section-heading">
@@ -29,58 +29,56 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <fieldset>
-                <input
-                  type="name"
-                  name="name"
-                  id="name"
-                  placeholder="Victim Name"
-                  autocomplete="on"
-                  required
-                />
-              </fieldset>
+              <input
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Victim Name"
+                autocomplete="on"
+                required
+                ngModel
+              />
             </div>
             <div class="col-lg-12">
-              <fieldset>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  pattern="[^ @]*@[^ @]*"
-                  placeholder="Email"
-                  required=""
-                />
-              </fieldset>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                pattern="[^ @]*@[^ @]*"
+                placeholder="Email"
+                ngModel
+              />
             </div>
             <div class="col-lg-4">
-              <fieldset>
-                <input type="number" name="age" id="age" placeholder="Age" />
-              </fieldset>
+              <input type="number" name="age" id="age" placeholder="Age" />
             </div>
             <div class="col-lg-8">
-              <fieldset>
-                <input
-                  pattern="+[0-9]"
-                  name="number"
-                  id="number"
-                  placeholder="Phone Number"
-                />
-              </fieldset>
+              <input
+                pattern="+[0-9]"
+                name="number"
+                id="number"
+                placeholder="Phone Number"
+                nModel
+              />
             </div>
             <div class="col-lg-12">
-              <fieldset>
-                <input name="location" id="location" placeholder="Location" />
-              </fieldset>
+              <input name="location" id="location" placeholder="Location" />
             </div>
             <div class="col-lg-12">
-              <fieldset>
-                <textarea
-                  name="details"
-                  id="details"
-                  placeholder="Details"
-                ></textarea>
-              </fieldset>
+              <textarea
+                name="details"
+                id="details"
+                placeholder="Details"
+                required
+                ngModel
+              ></textarea>
             </div>
+          </div>
+          <div class="col-lg-12">
+            <button type="submit" id="form-submit" class="main-gradient-button">
+              Submit Report
+            </button>
+            <br />
           </div>
         </form>
       </div>

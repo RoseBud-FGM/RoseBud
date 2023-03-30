@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-report',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./report.component.css']
 })
 export class ReportComponent {
+  
+  myForm: FormGroup;
+  constructor() {
+    this.myForm = new FormGroup({
 
+    })
+  }
+  submitReport() {
+    console.log("Hagu");
+  }
 }
