@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Report } from '../items/report'
 import { environment  } from '../../environments/environment';
 
 import { initializeApp  } from "firebase/app";
@@ -15,11 +14,11 @@ export class ReviewComponent implements OnInit {
   db = getFirestore(this.app);
 
   colRef = collection(this.db, "report");
-  reports: Report[] = [];
+  reports: any[] = [];
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
       snapshot.docs.forEach((doc) => {
-        // let ts = new Date(doc.data()['timestamp'].seconds).toString()
+        let media = doc.data()['status'] == "Accepted" ? "../../assets/images/accepted.png" : "../../assets/images/pending.png";
         this.reports.push(
           {
             id: doc.id,
@@ -32,6 +31,7 @@ export class ReviewComponent implements OnInit {
             status: doc.data()['status'],
             date: doc.data()['date'],
             org: doc.data()['org'],
+            media: media
           }
         )
       })

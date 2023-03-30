@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Counsellor } from '../items/counsellor';
 import { environment  } from "../../environments/environment";
 
 import { initializeApp  } from "firebase/app";
@@ -16,7 +15,7 @@ export class CounsellingComponent implements OnInit {
   db = getFirestore(this.app);
 
   colRef = collection(this.db, "counsellor");
-  counsellors: Counsellor[] = [];
+  counsellors: any[] = [];
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
       snapshot.docs.forEach((doc) => {
