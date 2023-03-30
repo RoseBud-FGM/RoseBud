@@ -29,7 +29,8 @@ export class ReportComponent {
   async submitReport() {
     this.myForm.value.status = "Pending";
     this.myForm.value.org = null;
-    this.myForm.value.date = new Date();
+    let date = new Date()
+    this.myForm.value.date = date.toString();
     const docRef = await addDoc(collection(this.db, "report"), this.myForm.value);
     console.log("Document written with ID: ", docRef.id);
     console.log(this.myForm.value);
