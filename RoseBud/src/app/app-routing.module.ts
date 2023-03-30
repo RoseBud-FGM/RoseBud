@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { CounsellingComponent } from './counselling/counselling.component';
 import { ReviewComponent } from './review/review.component';
 
-const routes: Routes = [{path:'', component:ReviewComponent}];
+const routes: Routes = [{path:'', component:LandingComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
