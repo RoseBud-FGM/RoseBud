@@ -1171,7 +1171,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/footer.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1184,7 +1184,7 @@ section.report {
   position: relative;
 }
 
-section.contact-us:after {
+/* section.contact-us:after {
   position: absolute;
   content: "";
   background-image: url(../images/footer-left-dec.png);
@@ -1193,7 +1193,7 @@ section.contact-us:after {
   width: 267px;
   height: 396px;
   z-index: 1;
-}
+} */
 
 section.report:after {
   position: absolute;
