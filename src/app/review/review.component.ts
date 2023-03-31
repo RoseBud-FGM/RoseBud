@@ -14,6 +14,7 @@ export class ReviewComponent implements OnInit {
   db = getFirestore(this.app);
 
   colRef = collection(this.db, "report");
+  
   reports: any[] = [];
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
@@ -34,8 +35,15 @@ export class ReviewComponent implements OnInit {
             media: media
           }
         )
+        
       })
+      
     })
   }
   ngOnInit(): void {}
+  changeBackground(report: { media: string;status: string }) {
+    report.media = '../../assets/images/accepted.png';
+    report.status= "Accepted";
+    
+  }
 }

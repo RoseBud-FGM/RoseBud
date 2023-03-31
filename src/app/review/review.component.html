@@ -32,7 +32,13 @@
 						</div>
 					</div>
 					<p class="card__description">{{ report.desc }}</p>
-					<button class="btn" onclick="alert('Report accepted')">Accept</button>
+					<button
+						class="btn"
+						onclick="alert('Report accepted')"
+						(click)="changeBackground(report)"
+					>
+						Accept
+					</button>
 				</div>
 			</div>
 		</li>
