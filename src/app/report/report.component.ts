@@ -34,6 +34,6 @@ export class ReportComponent {
     const docRef = await addDoc(collection(this.db, "report"), this.myForm.value);
     console.log("Document written with ID: ", docRef.id);
     console.log(this.myForm.value);
-    alert("Report Submitted!");
+    alert("Report Submitted!, Report ID: " + docRef.id);
   }
 }
