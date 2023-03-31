@@ -1,113 +1,261 @@
 <body>
-    <section class="our-team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1">
-            <div class="naccs">
-              <div class="tabs">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <ul class="nacc">
-                      <li class="active">
-                        <div>
-                          <div class="left-content">
-                            <h4>Report Id: r2MNefSXwhTVF7bFjPMr</h4>
-                            <div>
-                              <span>Reported By: Amina Khatar</span><br>
-                              <span>Location: Tripoli, LIB</span><br>
-                              <span>Status: This case has been linked with a partner organization and been taken care of.</span><br>
-                              <span>Linked Organization: Orchid Project</span><br>
-                            </div><br>
-                            <div class="col-lg-4">
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <button type="submit" id="form-submit" class="main-button-gradient" onclick="alert('Issue Raised')">Raise Issue</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="right-image">
-                            <img src="../../assets/images/victim.jpeg" alt=""/>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </section>
-  </body>
-  
-  
-  
-  
-    <!-- Scripts -->
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-      <script src="assets/js/isotope.min.js"></script>
-      <script src="assets/js/owl-carousel.js"></script>
-      <script src="assets/js/lightbox.js"></script>
-      <script src="assets/js/tabs.js"></script>
-      <script src="assets/js/video.js"></script>
-      <script src="assets/js/slick-slider.js"></script>
-      <script src="assets/js/custom.js"></script>
-      <script>
-        //according to loftblog tut
-        $(".nav li:first").addClass("active");
-  
-        var showSection = function showSection(section, isAnimate) {
-          var direction = section.replace(/#/, ""),
-            reqSection = $(".section").filter(
-              '[data-section="' + direction + '"]'
-            ),
-            reqSectionPos = reqSection.offset().top - 0;
-  
-          if (isAnimate) {
-            $("body, html").animate(
-              {
-                scrollTop: reqSectionPos,
-              },
-              800
-            );
-          } else {
-            $("body, html").scrollTop(reqSectionPos);
-          }
-        };
-  
-        var checkSection = function checkSection() {
-          $(".section").each(function () {
-            var $this = $(this),
-              topEdge = $this.offset().top - 80,
-              bottomEdge = topEdge + $this.height(),
-              wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var currentId = $this.data("section"),
-                reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-              reqLink
-                .closest("li")
-                .addClass("active")
-                .siblings()
-                .removeClass("active");
-            }
-          });
-        };
-  
-        $(".main-menu, .responsive-menu, .scroll-to-section").on(
-          "click",
-          "a",
-          function (e) {
-            e.preventDefault();
-            showSection($(this).attr("href"), true);
-          }
-        );
-  
-        $(window).scroll(function () {
-          checkSection();
-        });
-      </script>
+	<section class="our-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="section-heading">
+						<h6>Tracking</h6>
+						<h4>Ongoing <em>Cases</em></h4>
+					</div>
+				</div>
+				<div class="col-lg-10 offset-lg-1">
+					<div class="naccs">
+						<div class="tabs">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="menu">
+										<div class="active">
+											<img src="assets/images/victim2_thumb.jpg" alt="" />
+											<h4>ReportID</h4>
+											<span>sd87g34tghzgs</span>
+										</div>
+										<div>
+											<img src="assets/images/victim3_thumb.jpg" alt="" />
+											<h4>ReportID</h4>
+											<span>s9af7s8fsf8as</span>
+										</div>
+										<div>
+											<img src="assets/images/victim4_thumb.jfif" alt="" />
+											<h4>ReportID</h4>
+											<span>gfdsgasd9sg9s</span>
+										</div>
+										<div>
+											<img src="assets/images/victim5_thumb.jfif" alt="" />
+											<h4>ReportID</h4>
+											<span>df90hdfhfdhf9g</span>
+										</div>
+										<div>
+											<img src="assets/images/victim7_thumb.jpg" alt="" />
+											<h4>ReportID</h4>
+											<span>zxc9807gv6v67xc</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<ul class="nacc">
+										<li class="active">
+											<div>
+												<div class="left-content">
+													<h4>Report ID: sd87g34tghzgs</h4>
+													<div>
+														<span><b>Reported By:</b> Amina Khatar</span><br />
+														<span><b>Location:</b> Tripoli, LIB</span><br />
+														<span>
+															<b>Status:</b> This case has been linked with a partner
+															organisation and is being taken care of. </span
+														><br />
+														<span><b>Linked Organization:</b> Orchid Project</span><br />
+													</div>
+													<div class="text-button">
+														<button
+															type="submit"
+															id="form-submit"
+															class="main-button-gradient"
+															onclick="alert('Issue Raised')"
+														>
+															Raise Issue
+														</button>
+													</div>
+												</div>
+												<div class="right-image">
+													<img src="assets/images/testimonials/victim2.jpg" alt="" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div>
+												<div class="left-content">
+													<h4>Luis Oconnell</h4>
+													<p>
+														Quinoa roof party squid prism sustainable letterpress cray hammock
+														tumeric man bun mixtape tofu subway tile cronut. Deep v ennui
+														subway tile organic seitan kogi freegan bicycle rights try-hard
+														green juice probably.
+													</p>
+													<span><a href="#">Facebook</a></span>
+													<span><a href="#">Twitter</a></span>
+													<span class="last-span"><a href="#">Linkedin</a></span>
+													<div class="text-button">
+														<button
+															type="submit"
+															id="form-submit"
+															class="main-button-gradient"
+															onclick="alert('Issue Raised')"
+														>
+															Raise Issue
+														</button>
+													</div>
+												</div>
+												<div class="right-image">
+													<img src="assets/images/victims/victim3.jpg" alt="" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div>
+												<div class="left-content">
+													<h4>Jackie Riggs</h4>
+													<p>
+														Quinoa roof party squid prism sustainable letterpress cray hammock
+														tumeric man bun mixtape tofu subway tile cronut. Deep v ennui
+														subway tile organic seitan kogi freegan bicycle rights try-hard
+														green juice probably.
+													</p>
+													<span><a href="#">Facebook</a></span>
+													<span><a href="#">Twitter</a></span>
+													<span class="last-span"><a href="#">Linkedin</a></span>
+													<div class="text-button">
+														<button
+															type="submit"
+															id="form-submit"
+															class="main-button-gradient"
+															onclick="alert('Issue Raised')"
+														>
+															Raise Issue
+														</button>
+													</div>
+												</div>
+												<div class="right-image">
+													<img src="assets/images/team-member-02.jpg" alt="" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div>
+												<div class="left-content">
+													<h4>Alfred Small</h4>
+													<p>
+														Quinoa roof party squid prism sustainable letterpress cray hammock
+														tumeric man bun mixtape tofu subway tile cronut. Deep v ennui
+														subway tile organic seitan kogi freegan bicycle rights try-hard
+														green juice probably.
+													</p>
+													<span><a href="#">Facebook</a></span>
+													<span><a href="#">Twitter</a></span>
+													<span class="last-span"><a href="#">Linkedin</a></span>
+													<div class="text-button">
+														<button
+															type="submit"
+															id="form-submit"
+															class="main-button-gradient"
+															onclick="alert('Issue Raised')"
+														>
+															Raise Issue
+														</button>
+													</div>
+												</div>
+												<div class="right-image">
+													<img src="assets/images/team-member-04.jpg" alt="" />
+												</div>
+											</div>
+										</li>
+										<li>
+											<div>
+												<div class="left-content">
+													<h4>Dennis Mitchel</h4>
+													<p>
+														Quinoa roof party squid prism sustainable letterpress cray hammock
+														tumeric man bun mixtape tofu subway tile cronut. Deep v ennui
+														subway tile organic seitan kogi freegan bicycle rights try-hard
+														green juice probably.
+													</p>
+													<span><a href="#">Facebook</a></span>
+													<span><a href="#">Twitter</a></span>
+													<span class="last-span"><a href="#">Linkedin</a></span>
+													<div class="text-button">
+														<button
+															type="submit"
+															id="form-submit"
+															class="main-button-gradient"
+															onclick="alert('Issue Raised')"
+														>
+															Raise Issue
+														</button>
+													</div>
+												</div>
+												<div class="right-image">
+													<img src="assets/images/team-member-05.jpg" alt="" />
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Scripts -->
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script src="assets/js/isotope.min.js"></script>
+	<script src="assets/js/owl-carousel.js"></script>
+	<script src="assets/js/lightbox.js"></script>
+	<script src="assets/js/tabs.js"></script>
+	<script src="assets/js/video.js"></script>
+	<script src="assets/js/slick-slider.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		//according to loftblog tut
+		$(".nav li:first").addClass("active");
+
+		var showSection = function showSection(section, isAnimate) {
+			var direction = section.replace(/#/, ""),
+				reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+				reqSectionPos = reqSection.offset().top - 0;
+
+			if (isAnimate) {
+				$("body, html").animate(
+					{
+						scrollTop: reqSectionPos,
+					},
+					800
+				);
+			} else {
+				$("body, html").scrollTop(reqSectionPos);
+			}
+		};
+
+		var checkSection = function checkSection() {
+			$(".section").each(function () {
+				var $this = $(this),
+					topEdge = $this.offset().top - 80,
+					bottomEdge = topEdge + $this.height(),
+					wScroll = $(window).scrollTop();
+				if (topEdge < wScroll && bottomEdge > wScroll) {
+					var currentId = $this.data("section"),
+						reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+					reqLink.closest("li").addClass("active").siblings().removeClass("active");
+				}
+			});
+		};
+
+		$(".main-menu, .responsive-menu, .scroll-to-section").on(
+			"click",
+			"a",
+			function (e) {
+				e.preventDefault();
+				showSection($(this).attr("href"), true);
+			}
+		);
+
+		$(window).scroll(function () {
+			checkSection();
+		});
+	</script>
+</body>
