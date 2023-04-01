@@ -229,10 +229,11 @@ body {
 	);
 	padding: 12px 30px;
 	display: inline-block;
-	border-radius: 5px;
+	border-radius: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	transition: all 0.3s;
+	border-color: white;
 }
 
 .main-button-gradient a:hover {
@@ -1171,12 +1172,12 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/footer.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  position: relative;
+	background-image: url(../images/footer.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0px;
+	position: relative;
 }
 
 section.report {
