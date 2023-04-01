@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment  } from '../../environments/environment';
 
 import { initializeApp  } from "firebase/app";
-import { getFirestore, collection, getDocs} from "firebase/firestore";
+import { getFirestore, collection, getDocs, updateDoc, doc} from "firebase/firestore";
 
 @Component({
   selector: 'app-review',
@@ -14,7 +14,6 @@ export class ReviewComponent implements OnInit {
   db = getFirestore(this.app);
 
   colRef = collection(this.db, "report");
-  
   reports: any[] = [];
   constructor() {
     getDocs(this.colRef).then((snapshot)=> {
@@ -35,15 +34,16 @@ export class ReviewComponent implements OnInit {
             media: media
           }
         )
-        
       })
-      
     })
   }
   ngOnInit(): void {}
-  changeBackground(report: { media: string;status: string }) {
+  async changeBackground(report: { media: string; status: string, id: string}) {
     report.media = '../../assets/images/accepted.png';
     report.status= "Accepted";
-    
+    await updateDoc(doc(this.db, "report", report.id), {
+      status: "Accepted",
+      org: "Rosebud Organisation"
+    })
   }
 }

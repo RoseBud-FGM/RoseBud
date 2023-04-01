@@ -1,137 +1,144 @@
 <section class="page-heading">
-  <div class="container">
-    <div class="header-text">
-      <h4>Get assistance</h4>
-      <h1>Report an incident</h1>
-    </div>
-  </div>
+	<div class="container">
+		<div class="header-text">
+			<h4>Get assistance</h4>
+			<h1>Report an incident</h1>
+		</div>
+	</div>
 </section>
 <section class="report" id="contact-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 offset-lg-1">
-        <div class="left-image">
-          <img src="assets/images/report2.gif" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <form id="contact" (ngSubmit)="submitReport()" [formGroup]="myForm">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-heading">
-                <h6>Report</h6>
-                <h4>Enter <em>details</em></h4>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <input
-                type="name"
-                formControlName="name"
-                id="name"
-                placeholder="Victim Name"
-                autocomplete="on"
-                required
-                ngModel
-              />
-            </div>
-            <div class="col-lg-12">
-              <input
-                type="text"
-                formControlName="email"
-                id="email"
-                pattern="[^ @]*@[^ @]*"
-                placeholder="Email"
-                ngModel
-              />
-            </div>
-            <div class="col-lg-4">
-              <input
-                type="number"
-                name="age"
-                id="age"
-                placeholder="Age"
-                ngModel
-              />
-            </div>
-            <div class="col-lg-8">
-              <input
-                pattern="+[0-9]"
-                formControlName="phone"
-                id="phone"
-                placeholder="Phone Number"
-                nModel
-              />
-            </div>
-            <div class="col-lg-12">
-              <input
-                formControlName="location"
-                id="location"
-                placeholder="Location"
-              />
-            </div>
-            <div class="col-lg-12">
-              <textarea
-                formControlName="desc"
-                id="desc"
-                placeholder="Details"
-                required
-                ngModel
-              ></textarea>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <button type="submit" id="form-submit" class="main-gradient-button">
-              Submit Report
-            </button>
-            <br />
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 offset-lg-1">
+				<div class="left-image">
+					<img src="assets/images/report2.gif" alt="" />
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<form id="contact" (ngSubmit)="submitReport()" [formGroup]="myForm">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-heading">
+								<h6>Report</h6>
+								<h4>Enter <em>details</em></h4>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<input
+								type="name"
+								formControlName="name"
+								id="name"
+								placeholder="Victim Name"
+								autocomplete="on"
+								required
+								ngModel
+							/>
+						</div>
+						<div class="col-lg-12">
+							<input
+								type="text"
+								formControlName="email"
+								id="email"
+								pattern="[^ @]*@[^ @]*"
+								placeholder="Email"
+								ngModel
+							/>
+						</div>
+						<div class="col-lg-4">
+							<input
+								type="number"
+								name="age"
+								formControlName="age"
+								id="age"
+								placeholder="Age"
+								required
+								ngModel
+							/>
+						</div>
+						<div class="col-lg-8">
+							<input
+								pattern="+[0-9]"
+								formControlName="phone"
+								id="phone"
+								placeholder="Phone Number"
+								nModel
+							/>
+						</div>
+						<div class="col-lg-12">
+							<input formControlName="location" id="location" placeholder="Location" />
+						</div>
+						<div class="col-lg-12">
+							<textarea
+								formControlName="desc"
+								id="desc"
+								placeholder="Details"
+								required
+								ngModel
+							></textarea>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<button type="submit" id="form-submit" class="main-gradient-button">
+							Submit Report
+						</button>
+						<br />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="our-office">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="left-info">
-          <div class="section-heading">
-            <h6>Our Office</h6>
-            <h4>Get closer to <em>RoseBud</em></h4>
-          </div>
-          <p>
-          RoseBud is a vital tool in the fight against female genital
-          mutilation/cutting. By addressing the challenges faced by communities affected by this harmful practice and
-          providing a platform for education, awareness-raising, and support, we can make a significant impact towards
-          achieving a world free from harm and discrimination.<br /><br />Together, let us
-          take a stand and work towards ending FGM/C and promoting gender equality.
-          </p>
-          <ul>
-            <li>- A web-based application “RoseBud” to eliminate Female Genital Mutilation/Cutting (FGM/C).</li>
-            <li>- Features educational content, including videos, infographics, and FAQs.</li>
-            <li>- The application is designed to be user-friendly and accessible to all.</li>
-            <li>- To ensure that the application is effective and relevant to the users.</li>
-          </ul>
-          <!--<div class="main-button-gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="left-info">
+					<div class="section-heading">
+						<h6>Our Office</h6>
+						<h4>Get closer to <em>RoseBud</em></h4>
+					</div>
+					<p>
+						RoseBud is a vital tool in the fight against female genital
+						mutilation/cutting. By addressing the challenges faced by communities
+						affected by this harmful practice and providing a platform for education,
+						awareness-raising, and support, we can make a significant impact towards
+						achieving a world free from harm and discrimination.<br /><br />Together,
+						let us take a stand and work towards ending FGM/C and promoting gender
+						equality.
+					</p>
+					<ul>
+						<li>
+							- A web-based application “RoseBud” to eliminate Female Genital
+							Mutilation/Cutting (FGM/C).
+						</li>
+						<li>
+							- Features educational content, including videos, infographics, and FAQs.
+						</li>
+						<li>
+							- The application is designed to be user-friendly and accessible to all.
+						</li>
+						<li>
+							- To ensure that the application is effective and relevant to the users.
+						</li>
+					</ul>
+					<!--<div class="main-button-gradient">
             <a href="our-services.html">Our Services</a>
           </div> -->
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div id="video">
-          <div class="thumb">
-            <img src="assets/images/landing/bladepic.jpg" alt="" />
-            <div class="play-button">
-              <a href="href=https:/youtu.be/sIwQLgHHOZQ"
-                ><i class="fa fa-play"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div id="video">
+					<div class="thumb">
+						<img src="assets/images/landing/bladepic.jpg" alt="" />
+						<div class="play-button">
+							<a href="href=https:/youtu.be/sIwQLgHHOZQ"><i class="fa fa-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- Scripts -->
@@ -147,54 +154,50 @@
 <script src="assets/js/slick-slider.js"></script>
 <script src="assets/js/custom.js"></script>
 <script>
-  //according to loftblog tut
-  $(".nav li:first").addClass("active");
+	//according to loftblog tut
+	$(".nav li:first").addClass("active");
 
-  var showSection = function showSection(section, isAnimate) {
-    var direction = section.replace(/#/, ""),
-      reqSection = $(".section").filter('[data-section="' + direction + '"]'),
-      reqSectionPos = reqSection.offset().top - 0;
+	var showSection = function showSection(section, isAnimate) {
+		var direction = section.replace(/#/, ""),
+			reqSection = $(".section").filter('[data-section="' + direction + '"]'),
+			reqSectionPos = reqSection.offset().top - 0;
 
-    if (isAnimate) {
-      $("body, html").animate(
-        {
-          scrollTop: reqSectionPos,
-        },
-        800
-      );
-    } else {
-      $("body, html").scrollTop(reqSectionPos);
-    }
-  };
+		if (isAnimate) {
+			$("body, html").animate(
+				{
+					scrollTop: reqSectionPos,
+				},
+				800
+			);
+		} else {
+			$("body, html").scrollTop(reqSectionPos);
+		}
+	};
 
-  var checkSection = function checkSection() {
-    $(".section").each(function () {
-      var $this = $(this),
-        topEdge = $this.offset().top - 80,
-        bottomEdge = topEdge + $this.height(),
-        wScroll = $(window).scrollTop();
-      if (topEdge < wScroll && bottomEdge > wScroll) {
-        var currentId = $this.data("section"),
-          reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-        reqLink
-          .closest("li")
-          .addClass("active")
-          .siblings()
-          .removeClass("active");
-      }
-    });
-  };
+	var checkSection = function checkSection() {
+		$(".section").each(function () {
+			var $this = $(this),
+				topEdge = $this.offset().top - 80,
+				bottomEdge = topEdge + $this.height(),
+				wScroll = $(window).scrollTop();
+			if (topEdge < wScroll && bottomEdge > wScroll) {
+				var currentId = $this.data("section"),
+					reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+				reqLink.closest("li").addClass("active").siblings().removeClass("active");
+			}
+		});
+	};
 
-  $(".main-menu, .responsive-menu, .scroll-to-section").on(
-    "click",
-    "a",
-    function (e) {
-      e.preventDefault();
-      showSection($(this).attr("href"), true);
-    }
-  );
+	$(".main-menu, .responsive-menu, .scroll-to-section").on(
+		"click",
+		"a",
+		function (e) {
+			e.preventDefault();
+			showSection($(this).attr("href"), true);
+		}
+	);
 
-  $(window).scroll(function () {
-    checkSection();
-  });
+	$(window).scroll(function () {
+		checkSection();
+	});
 </script>
