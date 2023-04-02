@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	background-color: #fef8f8;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 4rem;
+	margin: 4rem 5vw;
+	padding: 0;
+	list-style-type: none;
+}
+
+.card {
+	position: relative;
+	display: block;
+	height: 100%;
+	border-radius: 40px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.card__image {
+	width: 100%;
+	height: auto;
+}
+
+.card__overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	border-radius: 40px;
+	background-color: #ffff;
+	transform: translateY(100%);
+	transition: 0.2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+	transform: translateY(0);
+}
+
+.card__header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	padding: 2em;
+	border-radius: 40px 0 0 0;
+	background-color: #ffff;
+	transform: translateY(-100%);
+	transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	z-index: 1;
+}
+
+.card__arc path {
+	fill: #ffff;
+}
+
+.card:hover .card__header {
+	transform: translateY(0);
+}
+
+.card__thumb {
+	flex-shrink: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.card__title {
+	font-size: 1em;
+	margin: 0 0 0.3em;
+	color: #000000;
+}
+
+.card__tagline {
+	display: block;
+	margin: 1em 0;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.8em;
+	color: #000000;
+}
+
+.card__status {
+	font-size: 0.8em;
+	color: #000000;
+}
+
+.card__description {
+	padding: 0 2em 2em;
+	margin: 0;
+	color: #000000;
+	font-family: "Noto Sans JP", sans-serif;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.btn {
+	background-image: linear-gradient(
+		to right,
+		#cc95c0 0%,
+		#dbd4b4 51%,
+		#cc95c0 100%
+	);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 40px;
+	display: block;
+}
+
+.btn:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*************************************************************************************************/
