@@ -16,6 +16,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ReviewComponent } from './review/review.component';
 import { ForumComponent } from './forum/forum.component';
+import { DoctorsComponent } from './doctors/doctors.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ForumComponent } from './forum/forum.component';
     HeaderComponent,
     FooterComponent,
     ReviewComponent,
-    ForumComponent
+    ForumComponent,
+    DoctorsComponent
   ],
   imports: [
     BrowserModule,
