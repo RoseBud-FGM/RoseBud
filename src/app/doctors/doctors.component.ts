@@ -28,7 +28,7 @@ export class DoctorsComponent implements OnInit {
             phone: doc.data()['phone'],
             email: doc.data()['email'],
             rating: doc.data()['rating'],
-            desc: doc.data()['desc']
+            spec: doc.data()['spec']
           }
         )
       })

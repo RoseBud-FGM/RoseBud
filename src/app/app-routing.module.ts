@@ -8,6 +8,7 @@ import { ReviewComponent } from './review/review.component';
 import { TrackingComponent } from './tracking/tracking.component';
 import { ForumComponent } from './forum/forum.component';
 import { DoctorsComponent } from './doctors/doctors.component';
+import { PostsComponent } from './posts/posts.component';
 import { LoginOrgComponent } from './login-org/login-org.component';
 
 const routes: Routes = [{path:'', component:LandingComponent},
@@ -16,7 +17,9 @@ const routes: Routes = [{path:'', component:LandingComponent},
 {path:'counselling', component: CounsellingComponent},
 {path:'review', component: ReviewComponent},
 {path:'tracking', component: TrackingComponent},
-{path: 'login-org', component: LoginOrgComponent}
+{path:'posts', component: PostsComponent},
+{path: 'login-org', component: LoginOrgComponent},
+{path: 'doctor', component: DoctorsComponent}
 ];
 
 @NgModule({

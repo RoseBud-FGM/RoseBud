@@ -17,6 +17,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ReviewComponent } from './review/review.component';
 import { ForumComponent } from './forum/forum.component';
 import { DoctorsComponent } from './doctors/doctors.component';
+import { PostsComponent } from './posts/posts.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { LoginOrgComponent } from './login-org/login-org.component';
 import { SignupUserComponent } from './signup-user/signup-user.component';
@@ -33,6 +34,7 @@ import { SignupUserComponent } from './signup-user/signup-user.component';
     ReviewComponent,
     ForumComponent,
     DoctorsComponent,
+    PostsComponent,
     LoginUserComponent,
     LoginOrgComponent,
     SignupUserComponent
