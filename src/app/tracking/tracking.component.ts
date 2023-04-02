@@ -26,7 +26,6 @@ export class TrackingComponent {
     getDocs(docRef).then((snapshot) => {
       snapshot.docs.forEach((doc) => {
         if(doc.id.toString() == this.myForm.value.reportid) {
-          console.log(doc.data());
           document.getElementById("report_id")!.innerText = "Report ID: " + doc.id;
           document.getElementById("reported_by")!.innerText = "Reported by:  " + doc.data()["name"];
           document.getElementById("reported_on")!.innerText = "Reported on: " + doc.data()["date"];
@@ -34,7 +33,7 @@ export class TrackingComponent {
           document.getElementById("org")!.innerText = "Accepting org: " + doc.data()["org"];
           document.getElementById("result")?.removeAttribute("hidden");
         }
-        })  
+        })
       }
     )
   }

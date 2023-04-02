@@ -16,12 +16,14 @@ export class ReviewComponent implements OnInit {
   app = initializeApp(environment.firebase);
   db = getFirestore(this.app);
   auth: any
+  orgId: any
   colRef = collection(this.db, "report");
   reports: any[] = [];
   constructor(private router: Router) {
     this.auth = getAuth();
     onAuthStateChanged(this.auth, (user) => {
       if (user) {
+        this.orgId = user.uid;
         getDocs(this.colRef).then((snapshot)=> {
           snapshot.docs.forEach((doc) => {
             let media = doc.data()['status'] == "Accepted" ? "../../assets/images/accepted.png" : "../../assets/images/pending.png";
@@ -53,7 +55,7 @@ export class ReviewComponent implements OnInit {
     report.status= "Accepted";
     await updateDoc(doc(this.db, "report", report.id), {
       status: "Accepted",
-      org: "Rosebud Organisation"
+      org: this.orgId
     })
   }
 }
