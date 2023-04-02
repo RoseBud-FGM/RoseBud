@@ -9,8 +9,9 @@ import { ReviewComponent } from './review/review.component';
 import { TrackingComponent } from './tracking/tracking.component';
 import { ForumComponent } from './forum/forum.component';
 
-const routes: Routes = [{path:'', component:ForumComponent},
+const routes: Routes = [{path:'', component:LandingComponent},
 {path:'report', component: ReportComponent},
+{path:'forum', component: ForumComponent},
 {path:'counselling', component: CounsellingComponent},
 {path:'review', component: ReviewComponent},
 {path:'tracking', component: TrackingComponent},
