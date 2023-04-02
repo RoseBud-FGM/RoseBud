@@ -15,6 +15,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ReviewComponent } from './review/review.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReviewComponent } from './review/review.component';
     TrackingComponent,
     HeaderComponent,
     FooterComponent,
-    ReviewComponent
+    ReviewComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
