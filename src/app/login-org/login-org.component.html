@@ -1,0 +1,61 @@
+<section class="page-heading">
+	<div class="container">
+		<div class="header-text">
+			<h4>This page is only accessible to organizations</h4>
+			<h1>Login as organization</h1>
+		</div>
+	</div>
+</section>
+<section class="report" id="contact-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 offset-lg-1">
+				<div class="left-image">
+					<img
+						src="https://cdn-bpplm.nitrocdn.com/MJefRwORvlGzblepEIRIgrqQFCGliGiG/assets/static/optimized/rev-72f94ae/wp-content/uploads/2020/07/User-Authentication_-Understanding-the-Basics-Top-Tips.jpg"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<form id="contact" (ngSubmit)="login()" [formGroup]="loginOrg">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="section-heading">
+								<h6>Organization</h6>
+								<h4>Enter your<em> credentials</em></h4>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<input
+								type="text"
+								formControlName="email"
+								id="email"
+								placeholder="Organization email"
+								required
+								ngModel
+							/>
+						</div>
+						<div class="col-lg-12">
+							<input
+								type="password"
+								formControlName="password"
+								id="password"
+								placeholder="Password"
+								autocomplete="off"
+								required
+								ngModel
+							/>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<button type="submit" id="form-submit" class="main-gradient-button">
+							Login
+						</button>
+						<br />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

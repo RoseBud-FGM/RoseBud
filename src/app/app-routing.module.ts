@@ -9,15 +9,16 @@ import { TrackingComponent } from './tracking/tracking.component';
 import { ForumComponent } from './forum/forum.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { PostsComponent } from './posts/posts.component';
+import { LoginOrgComponent } from './login-org/login-org.component';
 
 const routes: Routes = [{path:'', component:LandingComponent},
 {path:'report', component: ReportComponent},
 {path:'forum', component: ForumComponent},
 {path:'counselling', component: CounsellingComponent},
-{path:'doctors', component: DoctorsComponent},
 {path:'review', component: ReviewComponent},
 {path:'tracking', component: TrackingComponent},
 {path:'posts', component: PostsComponent}
+{path: 'login-org', component: LoginOrgComponent}
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AngularFireModule } from "@angular/fire/compat";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -18,6 +18,9 @@ import { ReviewComponent } from './review/review.component';
 import { ForumComponent } from './forum/forum.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { PostsComponent } from './posts/posts.component';
+import { LoginUserComponent } from './login-user/login-user.component';
+import { LoginOrgComponent } from './login-org/login-org.component';
+import { SignupUserComponent } from './signup-user/signup-user.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +34,13 @@ import { PostsComponent } from './posts/posts.component';
     ReviewComponent,
     ForumComponent,
     DoctorsComponent,
-    PostsComponent
+    PostsComponent,
+    LoginUserComponent,
+    LoginOrgComponent,
+    SignupUserComponent
   ],
   imports: [
+    AngularFireModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
