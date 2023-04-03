@@ -10,7 +10,7 @@
     <ul class="cards">
       <li *ngFor="let doctor of doctors">
         <div href="" class="card">
-          <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
+          <img src="../../assets/images/doctor_bg.jpeg" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
                 >
               </div>
             </div>
-            <p class="card__description">{{ doctor.spec }}</p>
+            <p class="card__description">Specialization: {{ doctor.spec }}</p>
             <button class="btn" onclick="alert('Session Booked')">
               Book Session
             </button>
