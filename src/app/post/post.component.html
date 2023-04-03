@@ -1,0 +1,53 @@
+<section class="our-office">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-18">
+				<div class="left-info">
+					<div class="section-heading">
+						<h6>By {{ post.author }}</h6>
+						<h4>{{ post.title }}</h4>
+					</div>
+					<p>
+						{{ post.desc }}
+					</p>
+					<button id="react-like" (click)="like()">👍🏻 {{ post.likesCount }}</button>
+					<button id="react-dislike" (click)="dislike()">
+						👎🏻 {{ post.dislikesCount }}
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="section-heading">
+		<h6>Comments</h6>
+		<button id="react-like">Add Comment</button>
+	</div>
+</section>
+
+<section class="testimonials" id="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="owl-testimonials" style="position: relative; z-index: 5">
+					<div class="item" *ngFor="let comment of comments">
+						<p style="color: rgb(108, 102, 102)">
+							{{ comment.body }}
+						</p>
+						<h6>{{ comment.author }}</h6>
+						<span>{{ comment.date }}</span>
+						<p>&#9;</p>
+						<button id="react-like" (click)="like_comm(comment)">
+							👍🏻 {{ comment.likesCount }}
+						</button>
+						<button id="react-dislike" (click)="dislike_comm(comment)">
+							👎🏻 {{ comment.dislikesCount }}
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

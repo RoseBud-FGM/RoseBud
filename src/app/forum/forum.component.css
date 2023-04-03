@@ -1,7 +1,64 @@
-.badge {
-	color: white;
-	background: green;
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	margin: 20px;
+	overflow: hidden;
+	width: 80vw;
 }
-.main-banner {
-	background-image: none;
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+#course-preview {
+	background: rgb(219, 138, 222);
+	background: linear-gradient(
+		-145deg,
+		rgba(219, 138, 222, 1) 0%,
+		rgba(246, 191, 159, 1) 100%
+	);
+	color: #fff;
+	padding: 20px;
+	width: 200px;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+#read-more {
+	background: rgb(219, 138, 222);
+	background: linear-gradient(
+		-145deg,
+		rgba(219, 138, 222, 1) 0%,
+		rgba(246, 191, 159, 1) 100%
+	);
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+h4 {
+	color: gray;
 }
