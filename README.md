@@ -50,5 +50,5 @@ npm i
 ng serve --open
 ```
 # Achievements
-_We already have cleared the college level evaluation, and have secured 3rd Position! We are looking forward to the GSC2023 final results._
+<p>We already have cleared the college level evaluation, and have secured 3rd Position! We are looking forward to the GSC2023 final results.</p>
 <img src="https://github.com/RoseBud-FGM/RoseBud/blob/main/src/assets/images/winners.jpeg" style="width: 50%;"></img>
