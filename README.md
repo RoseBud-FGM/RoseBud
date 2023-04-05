@@ -27,7 +27,7 @@ Awareness Section:To promote awareness and provide relevant resources covering t
 Forum:To create a healthy space for the communication of victims->Angular, Firebase Firestore
 Review:Used by verified organisations to accept the cases being reported by the victims->Angular,Firebase Firestore,Firebase Authentication 
 
-<img src="https://github.com/RoseBud-FGM/RoseBud/blob/main/src/assets/images/website.jpg" style="width: 50%;"></img>
+<img src="https://github.com/RoseBud-FGM/RoseBud/blob/main/src/assets/images/website.jpg" style=""></img>
 
 
 # Demonstration
