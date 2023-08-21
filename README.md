@@ -54,3 +54,10 @@ ng serve --open
 # Achievements
 <p>We already have cleared the college level evaluation, and have secured 3rd Position! We are looking forward to the GSC2023 final results.</p>
 <img src="https://github.com/RoseBud-FGM/RoseBud/blob/main/src/assets/images/winners.jpeg" style="width: 50%;"></img>
+
+# Contributors
+
+<p align="left">
+  <a href="https://github.com/RoseBud-FGM/RoseBud/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=RoseBud-FGM/RoseBud" />
+</a></p>
