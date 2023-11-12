@@ -31,7 +31,7 @@ Review:Used by verified organisations to accept the cases being reported by the 
 
 
 # Demonstration
-The web-app is hosted using Firebase, and is currently live at: https://fgm-project-a995a.web.app/
+The web-app is hosted using Firebase and is currently live at: https://fgm-project-a995a.web.app/
 
 To run the web-app locally:
 
